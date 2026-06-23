@@ -1,0 +1,67 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Seven Segment" CircId="Seven Segment-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-108,12" rotation="0" hflip="1" vflip="1" label="Seven Segment-1" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 Ω" />
+
+<item itemtype="Ground" CircId="Ground-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-72,60" rotation="0" hflip="1" vflip="1" label="Ground-2" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-296,-36" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-3" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="KeyPad" CircId="KeyPad-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-112,-120" rotation="0" hflip="-1" vflip="1" label="KeyPad-4" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4" Cols="4" Key_Labels="0123456789ABCDEF" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-5" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-164,12" rotation="0" hflip="1" vflip="1" label="ResistorDip-5" idLabPos="-24,-40" labelrot="0" valLabPos="4,-26" valLabRot="90" Resistance="100 Ω" Size="8" PullUp="false" PuVolt="5 V" />
+
+<item itemtype="MCU" CircId="mega32-6" mainComp="false" Show_id="true" Show_Val="false" Pos="-256,-108" rotation="0" hflip="1" vflip="1" label="mega32-6" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Documents/Atmel Studio/7.0/AssemblerApplication8/AssemblerApplication8/Debug/AssemblerApplication8.hex" Auto_Load="true" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="mega32-6-PORTA6" endpinid="KeyPad-4-Pin6" pointList="-200,-52,-148,-52,-148,-28,-80,-28,-80,-48" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="ResistorDip-5-resistor5-ePin11" endpinid="Seven Segment-1-pin_f" pointList="-148,28,-132,28" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Seven Segment-1-pin_commona" endpinid="Ground-2-Gnd" pointList="-100,44,-72,44" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="mega32-6-PORTA7" endpinid="KeyPad-4-Pin7" pointList="-200,-44,-152,-44,-152,-20,-64,-20,-64,-48" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="ResistorDip-5-resistor4-ePin9" endpinid="Seven Segment-1-pin_e" pointList="-148,20,-132,20" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="mega32-6-PORTA2" endpinid="KeyPad-4-Pin2" pointList="-200,-84,-128,-84,-128,-80" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="mega32-6-PORTA4" endpinid="KeyPad-4-Pin4" pointList="-200,-68,-128,-68,-128,-44,-112,-44,-112,-48" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="mega32-6-PORTA1" endpinid="KeyPad-4-Pin1" pointList="-200,-92,-128,-92,-128,-96" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="mega32-6-PORTA3" endpinid="KeyPad-4-Pin3" pointList="-200,-76,-128,-76,-128,-64" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Fixed Voltage-3-outnod" endpinid="mega32-6-RST" pointList="-280,-36,-264,-36" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="mega32-6-PORTA0" endpinid="KeyPad-4-Pin0" pointList="-200,-100,-128,-100,-128,-112" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="mega32-6-PORTC0" endpinid="ResistorDip-5-resistor7-ePin14" pointList="-200,44,-180,44" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="ResistorDip-5-resistor0-ePin1" endpinid="Seven Segment-1-pin_a" pointList="-148,-12,-132,-12" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="ResistorDip-5-resistor3-ePin7" endpinid="Seven Segment-1-pin_d" pointList="-148,12,-132,12" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="mega32-6-PORTA5" endpinid="KeyPad-4-Pin5" pointList="-200,-60,-136,-60,-136,-36,-96,-36,-96,-48" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="ResistorDip-5-resistor6-ePin13" endpinid="Seven Segment-1-pin_g" pointList="-148,36,-132,36" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="mega32-6-PORTC1" endpinid="ResistorDip-5-resistor6-ePin12" pointList="-200,36,-180,36" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="mega32-6-PORTC3" endpinid="ResistorDip-5-resistor4-ePin8" pointList="-200,20,-180,20" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="mega32-6-PORTC2" endpinid="ResistorDip-5-resistor5-ePin10" pointList="-200,28,-180,28" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="mega32-6-PORTC5" endpinid="ResistorDip-5-resistor2-ePin4" pointList="-200,4,-180,4" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="ResistorDip-5-resistor7-ePin15" endpinid="Seven Segment-1-pin_dot" pointList="-148,44,-116,44" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="ResistorDip-5-resistor2-ePin5" endpinid="Seven Segment-1-pin_c" pointList="-148,4,-132,4" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="mega32-6-PORTC4" endpinid="ResistorDip-5-resistor3-ePin6" pointList="-200,12,-180,12" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="ResistorDip-5-resistor1-ePin3" endpinid="Seven Segment-1-pin_b" pointList="-148,-4,-132,-4" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="mega32-6-PORTC7" endpinid="ResistorDip-5-resistor0-ePin0" pointList="-200,-12,-180,-12" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="mega32-6-PORTC6" endpinid="ResistorDip-5-resistor1-ePin2" pointList="-200,-4,-180,-4" />
+
+</circuit>
