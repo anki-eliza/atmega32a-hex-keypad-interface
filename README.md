@@ -6,6 +6,8 @@ This project demonstrates interfacing a 4×4 hexadecimal keypad with an ATmega32
 
 The system scans the keypad matrix, detects the pressed key, converts it to a hexadecimal value, and displays the corresponding character on a 7-segment display.
 
+---
+
 ## Features
 
 * AVR Assembly implementation
@@ -14,6 +16,8 @@ The system scans the keypad matrix, detects the pressed key, converts it to a he
 * Lookup table-based decoding
 * 7-segment display output
 * SimulIDE simulation
+
+---
 
 ## Project Structure
 
@@ -28,12 +32,16 @@ images/
  └── hex_keypad.png
 ```
 
+---
+
 ## Hardware Components
 
 * ATmega32A
 * 4×4 Hexadecimal Keypad
 * Seven-Segment Display
 * Connecting wires
+
+---
 
 ## Working Principle
 
@@ -43,9 +51,13 @@ images/
 4. A lookup table maps the key to its corresponding 7-segment display pattern.
 5. The selected hexadecimal character (0–F) is displayed on the 7-segment display.
 
+---
+
 ## Circuit Diagram
 
 ![Circuit Diagram](images/hex_keypad.png)
+
+---
 
 ## Building the Project
 
@@ -58,6 +70,8 @@ images/
 2. Assemble the program using an AVR assembler such as Microchip Studio (recommended).
 
 3. Load the generated HEX file into the ATmega32A microcontroller in SimulIDE before running the simulation.
+
+---
 
 ## Running the Simulation
 
@@ -84,6 +98,8 @@ images/
 
 5. Observe the corresponding hexadecimal digit on the 7-segment display.
 
+---
+
 ## Source Code
 
 The AVR Assembly source code is available in:
@@ -91,6 +107,8 @@ The AVR Assembly source code is available in:
 ```text
 code/main.asm
 ```
+
+---
 
 ## Author
 
